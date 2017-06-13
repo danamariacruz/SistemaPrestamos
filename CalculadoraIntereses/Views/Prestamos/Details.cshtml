@@ -1,0 +1,50 @@
+﻿@model CalculadoraIntereses.Models.Prestamos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prestamos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Plazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Plazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadPrestada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadPrestada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PrestamoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
